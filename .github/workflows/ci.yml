@@ -36,3 +36,13 @@ jobs:
         with:
           name: app-artifact
           path: dist/
+
+#   docker:
+#     runs-on: ubuntu-latest
+#     needs: test
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+
+#       - name: Build Docker image
+#         run: docker build -t devops-ai-tool:${{ github.sha }} .
